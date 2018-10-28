@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>修改密码——小A</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="CSS/base.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="CSS/newLogin.css" />
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+
+</head>
+<body>
+    <div class="pic"><img src="images/logo.png"/></div>                         
+    <div class="login"><strong>修改密码</strong></div>
+    <br></br>
+    <div class="container">
+        <form method="post" action="">
+        <div class="littleContainer">
+            <div class="star">*</div>
+            <div class="textname">帐号</div>
+            <div class="user1">
+                <input type="text" name="username" class="auth">
+                <span >请填写用户名</span>
+            </div>
+        
+        </div>
+        <br></br></br>
+        <div class="littleContainer">
+            <div class="star">*</div>
+            <div class="textname">旧密码：</div>
+            <div class="user2">
+                <input type="password" name="password" class="auth">
+                <span>请填写密码</span>
+            </div>
+        </div>
+        <br></br></br>
+        <div class="littleContainer">
+            <div class="star">*</div>
+            <div class="textname">新密码：</div>
+            <div class="user3">
+                <input type="password" name="nwepassword" class="auth">
+                <span>请填写6-12位的密码</span>
+            </div>
+        </div>
+        <br></br></br>
+        <div class="littleContainer">
+            <div class="star">*</div>
+            <div class="textname">新密码：</div>
+            <div class="user4">
+                <input type="password" name="surepassword" class="auth">
+                <span>两次密码输入不一致</span>
+            </div>
+        </div>
+        <br></br><br>
+        <div class="buttonType">
+            <input type="submit"  class="Button" value="修改密码" >
+        </div>
+        </form> 
+</body> 
+
+        <script type="text/javascript">
+            console.log($('input[name=username]')[0]);
+            $('input[name=username]').blur(function(){
+                    val=$(this).val(); // 获取用户名
+                    if(val.length==0){
+                    a=0;
+                    $(this).data({'num':0});
+                    $(this).next().show(); // 显示提示消息
+                    $("div.user1").css("border","1px solid red");
+                    }else{
+                    a=1;
+                    $(this).data({'num':1});
+                    $(this).next().hide(); // 隐藏掉提示信息
+                    $("div.user1").css("border","1px solid #1296DB");
+                    }
+              });
+
+            console.log($('input[name=username]')[0]);
+            $('input[name=password]').blur(function(){
+                    val=$(this).val();//旧密码
+                    if(val.length==0){
+                    b=0;
+                    $(this).data({'num':0});
+                    $(this).next().show(); 
+                    $("div.user2").css("border","1px solid red");
+                    }else{
+                    b=1;
+                    $(this).data({'num':1});
+                    $(this).next().hide(); 
+                    $("div.user2").css("border","1px solid #1296DB");
+                    }
+              });
+
+            console.log($('input[name=nwepassword]')[0]);  
+            $('input[name=nwepassword]').blur(function(){
+                    val=$(this).val(); //新密码
+                    if(val.length<6||val.length>12){
+                        c=0;
+                        $(this).data({'num':0});
+                        $(this).next().show();
+                        $("div.user3").css("border","1px solid red");
+                    }else{
+                        c=1;
+                        $(this).data({'num':1});
+                        $(this).next().hide();
+                        $("div.user3").css("border","1px solid #1296DB");
+                    }     
+                    });
+            console.log($('input[name=surepassword]')[0]); 
+            $('input[name=surepassword]').blur(function(){
+                pwd=$('input[name=nwepassword]').val(); 
+                repwd=$(this).val();//新密码确认 
+                    if(pwd!=repwd){
+                    d=0; 
+                    $(this).data({'num':0});
+                    $(this).next().show();
+                    $("div.user4").css("border","1px solid red");
+                    }else{
+                    d=1;
+                    $(this).data({'num':1});
+                    $(this).next().hide(); 
+                    $("div.user4").css("border","1px solid #1296DB");
+                    }
+            });  
+        
+            // 表单提交 
+            $('form').submit(function(){
+            $('input.auth').blur(); 
+            r=a+b+c+d;
+            if(r==4){
+            alert("修改成功");
+            return true; // 提交表单
+            }else{
+            alert("请完善你的输入信息");
+            return false; // 阻止表单提交
+            }
+        });
+
+            </script>
+        </div>
+
+ </html>                             

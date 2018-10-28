@@ -1,0 +1,487 @@
+body{
+    margin: 0;
+    padding: 0;
+    min-width: 1366px;
+    font-family: "Microsoft YaHei" ;
+    overflow-x: hidden;
+}
+.container{
+    width:100%;
+    height:30px;
+    background-color: #464c5b;
+    margin: 0 ; 
+}
+.rightCt{
+    width: 250x;
+    height: 25px;
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    padding:5px 20px 0px 0px;
+    margin-right: 20px;
+    word-spacing: 5px;
+    vertical-align: text-bottom;
+    float: right;
+}
+
+a{
+    text-decoration: none;
+    outline: none;
+    color: white;
+}
+a:hover{
+    text-decoration: none;
+}
+.logoContainer{
+    height: 45px;
+    width: 100%;
+    background-color: white;
+    border-bottom: 2px solid rgb(223, 214, 214);
+}
+.pic{
+    height: 30px;
+    width:120px;
+    padding-left: 20px;
+    margin-top: 15px;
+}
+img{
+    height:30px;
+    width: 120px;
+}
+
+.managerText{
+    width:130px;
+    height: 50px;
+    font-size: 23px;
+    color: rgb(77, 74, 74);
+    text-align: center;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.buttonCont{
+    height: 45px;
+    width: 1366px;
+    margin: 0 auto;
+   
+}
+
+.rButton{
+    height: 45px;
+    width: 800px;
+    float: left;
+    padding-left: 20px;
+   
+}
+
+.button1{
+    background-color: #00cc66; 
+    border: 1px solid  #00cc66;
+    color: white;
+    padding:8px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.button2{
+    background-color: #00cc66; 
+    border: 1px solid  #00cc66;
+    color: white;
+    padding:8px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.button3{
+    background-color:#F7F7F7; 
+    border: 1px solid gray;
+    color:gray;
+    padding:8px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+.button4{
+    background-color:#57C5F7;
+    border: 1px solid  #57C5F7;
+    color: white;
+    padding:8px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.button5{
+    background-color:#F7F7F7; 
+    border: 1px solid gray;
+    color:gray;
+    padding:8px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+.button6{
+    background-color:white; 
+    border: 1px solid #778181;
+    color:gray;
+    padding:8px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px; 
+}
+.button7{
+    background-color:white; 
+    border: 1px solid #778181;
+    color:gray;
+    padding:8px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px; 
+}
+
+.button:hover {
+    background-color: #3e8e41;
+}
+
+#parent >li> span{
+    text-align: center;
+    border:1px solid gray;
+    background:rgb(223, 214, 214);
+    display: block;
+    width:55px;
+    height: 35px;
+    }
+ li {
+    line-height: 37px;
+    position: relative;
+    left:170px;
+    display: block;
+    }
+       
+li>ul{
+    line-height: 37px;
+    position: relative;
+    right: 170px;
+    display: none;
+    }
+#parent span:hover + ul{
+    display:block;
+    color: grey;
+    }
+.tSearch{
+    height: 45px;
+    width: 400px;  
+    float: right;
+    padding-right: 20px;
+    
+  
+    }
+.tSearch-form{
+    display:block;
+    width:300px;
+    height: 32px;
+   
+}
+
+.formText{
+    display:block;
+    width:300px;
+    height: 32px;
+    border:1px solid gray;
+    position: relative;
+    top:0px; 
+    left: 60px;;
+
+}
+
+.formPic{
+    display:block;
+    width:50px;
+    height:32px;
+    border:1px solid gray;
+    position: relative;
+    top:-32px; 
+    left:310px;
+}
+
+.tableStyle{
+    width:1306px;
+    margin: 0 auto;
+    font-size: 14px;
+    text-indent: 13px;
+    position: relative;
+    right: 10px;
+}
+
+th{
+    height: 40px;
+    border: 1px solid #D7DDE4;
+    color: #778181;
+}
+td{
+    height: 40px;
+    border: 1px solid #D7DDE4;
+    color: #657180;
+}
+
+.tableHead{
+    widows: 1306px;
+    height:35px;
+    background-color: #F5F7F9;
+    font-size: 15px;
+    
+}
+
+.tableBody{
+    width:1306px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background-color: #F5F7F9;
+}
+
+
+
+.tableHead table,.tableBody table{
+    width: 100%;
+}
+.tableBody tr:nth-child(2n+1){
+    background-color: #ffffff;
+}
+
+.col1{
+    width: 70px;
+}
+.col2{
+    width: 100px;
+}
+.col3{
+    width: 100px;
+}
+.col4{
+    width: 180px;
+}
+.col5{
+    width: 180px;
+}
+.col6{
+    width: 100px;
+}
+.col7{
+    width: 180px;
+}
+.col8{
+    width: 100px;
+}
+.col9{
+    width: 100px;
+}
+.write{
+    background-color: #4CAF50; /* Green */
+    border: 1px solid  #4CAF50;
+    color: white;
+    padding:2px 4px;
+}
+
+.delete{
+    background-color: red;
+    border: 1px solid  red;
+    color: white;
+    padding:2px 4px;
+    position: relative;
+    left: 12px;
+}
+
+#one,#tow{
+    color: #778181;
+}
+
+
+#main，#mainAddmtp{ 
+    height:485px; 
+    padding-top:90px; 
+    
+} 
+#fullbg { 
+    background-color:gray; 
+    left:0; 
+    opacity:0.5; 
+    position:absolute; 
+    top:0; 
+    z-index:3; 
+    filter:alpha(opacity=50); 
+    -moz-opacity:0.5; 
+    -khtml-opacity:0.5; 
+} 
+
+#dialog,#dialogmtp{ 
+    background-color:#fff; 
+    height:485px; 
+    left:45%; 
+    margin:-200px 0 0 -200px; 
+    padding:1px; 
+    position:fixed !important; /* 浮动对话框 */ 
+    position:absolute; 
+    top:50%; 
+    width:500px; 
+    z-index:5; 
+    border-radius:8px; 
+    display:none;
+   
+} 
+#pbox {
+    height: 45px;
+    border-bottom: 1px solid #e3e8ee;
+}
+
+#pbox p{
+    height: 20px;
+}
+#pbox p.add{
+    font-size:14px;
+    float: left;  
+    text-indent: 20px;
+    color: #636875;
+    position: relative;
+    top: 15px;
+}
+
+#dialog p.close,#dialogmtp p.close { 
+    text-align:right; 
+    padding-right:10px; 
+    float: right;
+    color: black;
+} 
+#dialog p.close a,#dialogmtp p.close { 
+    color:black; 
+    text-decoration:none; 
+} 
+ 
+form{
+    padding: 0px 20px;
+    color:#636875;
+} 
+
+
+.littleContainer{
+    width:460px;
+    height:70px;
+    margin-top:20px;
+}
+
+.star{
+    color:red;
+    float: left;
+}
+
+form span{
+    color: #f00;
+    font-size: 12px;
+    border: none;
+    position: relative;
+    left:7px;
+    display: none;
+    }
+
+input.divBottom {
+    border-radius: 4px;
+    border: 1px solid #c9cdc2;
+    height: 30px;
+    width: 440px;
+    text-indent: 10px;
+    font-size: 14px;
+    color:#c9cdc2;
+    margin: 10px;
+}
+
+input divBottom :hover{
+    border: 1px solid #5cadff;
+}
+
+.line{
+    widows: 520px;   
+    border-bottom: 1px solid #e3e8ee;
+    margin-top:20px;
+}
+.buttonType{
+    margin-top:10px;
+    padding-right: 20px;
+}
+.sureButton{
+    width: 70px;
+    height: 35px;
+    font-size: 15px;
+    color: white;
+    border:#5cadff;
+    border-radius: 4px;
+    background-color:#1296DB;
+    float: right;
+    
+}
+.closeButton{
+    width: 70px;
+    height: 35px;
+    font-size: 15px;
+    color: #636875;
+    border:white;
+    border-radius: 4px;
+    background-color:white;
+    float: right;
+    
+}
+
+/*分页*/
+.pageForm{
+    width: 1306px;
+    height: 100px;
+    margin: 0px  0px 0px 20px ;
+  
+}
+
+ul.pagination {
+    display: inline-block;
+    padding: 0;
+    margin: 30px  0px 0px 0px;
+    position: absolute;
+    left: 33%;
+}
+
+ul.pagination li {
+    display: inline;
+}
+
+ul.pagination li a {
+    color: black;
+    float: left;
+    padding: 1px 30px;
+    text-decoration: none;
+    border: 1px solid blue;
+	border-radius:3px;
+}
+.active{
+	background-color: #7FFFAA;
+}

@@ -1,0 +1,98 @@
+body{
+    margin-top: 0;
+    padding: 0;
+    min-width: 600px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.img{
+    width: 520px ;  
+    height: 200px;
+}
+
+.pic{
+    width:520px;
+    height: 200px;
+    margin-left: auto;
+    margin-right:  auto;
+}
+
+.login{
+    width:120px;
+    font-size: 25px;
+    margin-left: auto;
+    margin-right: auto; 
+   
+}
+.container{
+    width:300px;
+    height:auto;
+    margin: 0 auto;
+    
+}
+.litteContainer{
+    width:300px;
+    height:300px;
+   
+    background-color: red;
+}
+
+.star{
+    color:red;
+    float: left;
+}
+
+.user1,.user2,.user3,.user4{
+    width:300px;
+    height: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    border:solid 1px #ccc;
+    border-radius: 8px;
+    position: relative;
+    top: 10px;
+   
+}
+.auth :hover{
+    border: 1px solid #1296DB;
+}
+
+input{
+    width: 300px;
+    height: 32px; 
+    float:left;
+    border: none;
+    background: none;
+    border-radius: 8px;
+    text-indent:10px;
+    font-size: 16px;
+}
+
+.Button{
+    width: 300px;
+    height: 32px;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    background-color:#1296DB;
+    
+}
+
+.buttonType{
+    width:300px;
+    height: 30rpx;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form span{
+    color: #f00;
+    font-size: 12px;
+    border: none;
+    position: relative;
+    top:2px;
+    display: none;
+    }
+span :hover{
+    border:1px solid white;
+}   

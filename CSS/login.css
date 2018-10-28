@@ -1,0 +1,98 @@
+body{
+    margin-top:5%;
+    padding: 0;
+    min-width: 600px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.img{
+    width: 520px ;  
+    height: 200px;
+}
+
+.pic{
+    width:520px;
+    height: 200px;
+    margin-left: auto;
+    margin-right:  auto;
+}
+
+.login{
+    width:60px;
+    font-size: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7px;
+}
+.big{
+    width: 300px;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7px;
+}
+.user1{
+    width:300px;
+    height: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    border:solid 1px #ccc;
+    border-radius: 8px;
+    background:url(../images/account.png) no-repeat 0 center ;
+    background-size: 30px;
+    background-color: #FAFFBD;
+}
+.user2{
+    width:300px;
+    height: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    border:solid 1px #ccc;
+    border-radius: 8px;
+    background:url(../images/password.png) no-repeat 0 center ;
+    background-size: 28px;
+    background-color: #FAFFBD;
+}
+
+input{
+    width: 270px;
+    height: 32px; 
+    float: right;;
+    border: none;
+    background: none;
+    border-radius:8px;
+    text-indent:10px;
+    font-size: 14px;
+    color: gray;
+    
+}
+.user1:hover{
+    border: 1px solid #1296DB;
+}
+.user2:hover{
+    border: 1px solid #1296DB;
+}
+
+.account{
+    width: 300px;
+    height: 14px;
+    color: red;
+    font-size:14px;
+    display: none;
+}
+.button{
+    width: 300px;
+    height: 32px;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    background-color:#1296DB;
+}
+
+.buttonType{
+    width:300px;
+    height: 30rpx;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:7px;
+}

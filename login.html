@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录——小A</title> 
+    <link rel="stylesheet" type="text/css" media="screen" href="CSS/base.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="CSS/login.css" />
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+
+    </head>
+
+    <body>
+        <form>
+        <div  class="pic"><img src="images/logo.png"/></div>
+        <div class="login"><strong>登录</strong></div>
+        <div class="big">
+            <div class="user1" >
+                <input type="text" id="account" value="帐号"/>
+            </div>
+        <div class="account" id="one">请输入帐号</div>
+        </div>
+        <div class="big">
+            <div class="user2">
+                <input type="text" id="password" value="密码"/>
+            </div>
+        <div class="account" id="tow">请输入密码</div>
+        </div>  
+        <div class="buttonType">
+            <input type="submit"  class="button" value="登录" />
+        </div>
+
+        </form>
+    </body>
+
+    <script type="text/javascript">
+        $(function(){
+            $("#account").focus(function(){
+                var txt_value=$(this).val();
+                $(this).addClass("focus");
+                if(txt_value==this.defaultValue){
+                    $(this).val("");
+                    $("div.user1").css("border","1px solid #1296DB");
+                    $("#one").hide();
+                }
+            });
+            $("#account").blur(function(){
+                a=1;
+                var txt_value=$(this).val();
+                $(this).removeClass("focus");
+                if(txt_value==""){
+                    a=0;
+                    $(this).val("帐号");
+                    $("div.user1").css("border","1px solid red");
+                    $("#one").show();
+                }
+            });
+            var $password = $(".password");
+            $("#password").focus(function(){
+                var txt_value=$(this).val();
+                if(txt_value==this.defaultValue){
+                    $(this).val("");
+                    $("div.user2").css("border","1px solid #1296DB");
+                    $("#password").attr("type","password");
+                    $("#tow").hide();
+                    
+                }
+            });
+
+            $("#password").blur(function(){
+                b=1;
+                var txt_value=$(this).val();
+                if(txt_value==""){
+                    $(this).val("密码");
+                    $("div.user2").css("border","1px solid red");
+                    $("#password").attr("type","text");
+                    b=0;
+                    $("#tow").show();
+                }
+            });
+
+     });
+     $('form').submit(function(){
+            $('input.account').blur(); 
+            r=a+b;
+            if(r==2){
+            return true; // 提交表单
+            }else{
+            alert("请完善你的输入信息");
+            return false; // 阻止表单提交
+            }
+        });
+    </script>   
+</html>
