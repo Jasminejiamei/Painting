@@ -94,7 +94,7 @@
 		}
 	})
 	
-
+ 
 	//绑定上一页点击事
 	$(document).on("click","#previousPage",function(){
 		var num =$(".active").html();
