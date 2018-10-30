@@ -42,7 +42,7 @@
 		$('input[name=closeButton2]').click(function(){
 			$("#fullbg,#dialogname").hide(); 
 		})
-	
+	 
 		//上传文件
 		function setFilename(){
 			var pictureFile = document.getElementById("pictureFile");
@@ -50,9 +50,6 @@
 		}
 		
 			
-
-
-
 //表单认证
         $('input[name=username]').blur(function(){
                 val=$(this).val(); // 获取用户名
