@@ -1,19 +1,55 @@
 // 弹出层 
-            //显示灰色 jQuery 遮罩层 
-        function showBg() { 
-            var bh = $("body").height();
-            var bw = $("body").width(); 
-            $("#fullbg").css({ 
-            height:bh, 
-            width:bw, 
-            display:"block" 
-            }); 
-            $("#dialog").show(); 
-        } 
-            //关闭灰色 jQuery 遮罩 
-        function closeBg() { 
-            $("#fullbg,#dialog").hide(); 
-        }
+        //添加账号，显示灰色 jQuery 遮罩层 
+		$ (".button1").click(function(){
+				var bh = $("body").height();
+				var bw = $("body").width(); 
+				$("#fullbg").css({ 
+				height:bh, 
+				width:bw, 
+				display:"block" 
+				}); 
+				$("#dialog").show(); 
+			})
+		$('input[name=closeButton1]').click(function(){
+				$("#fullbg,#dialog").hide(); 
+			})
+
+        //批量添加账号
+		$ (".button2").click(function(){
+				var bh = $("body").height();
+				var bw = $("body").width(); 
+				$("#fullbg").css({ 
+				height:bh, 
+				width:bw, 
+				display:"block" 
+				}); 
+				$("#dialogSecond").show();
+			}) 
+		$('input[name=closeButton2]').click(function(){
+				$("#fullbg,#dialogSecond").hide(); 
+			})
+		//文件名
+		$ (".button4").click(function(){
+			var bh = $("body").height();
+			var bw = $("body").width(); 
+			$("#fullbg").css({ 
+			height:bh, 
+			width:bw, 
+			display:"block" 
+			}); 
+			$("#dialogname").show();
+		}) 
+		$('input[name=closeButton2]').click(function(){
+			$("#fullbg,#dialogname").hide(); 
+		})
+	
+		//上传文件
+		function setFilename(){
+			var pictureFile = document.getElementById("pictureFile");
+			pictureFile.click();
+		}
+		
+			
 
 
 

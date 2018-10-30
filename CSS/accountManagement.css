@@ -151,6 +151,12 @@ img{
     cursor: pointer;
     border-radius: 4px; 
 }
+#pictureFile{
+    height: 1px;
+    width: 0px;
+    position: relative;
+    right:70px;
+}
 .button7{
     background-color:white; 
     border: 1px solid #778181;
@@ -321,10 +327,12 @@ td{
 }
 
 
-#main，#mainAddmtp{ 
-    height:485px; 
-    padding-top:90px; 
-    
+/*弹窗*/
+#main{ 
+    padding-top:0px; 
+} 
+#maintow{    
+    padding-top:0px; 
 } 
 #fullbg { 
     background-color:gray; 
@@ -338,7 +346,7 @@ td{
     -khtml-opacity:0.5; 
 } 
 
-#dialog,#dialogmtp{ 
+#dialog{ 
     background-color:#fff; 
     height:485px; 
     left:45%; 
@@ -350,9 +358,42 @@ td{
     width:500px; 
     z-index:5; 
     border-radius:8px; 
+    display:none; 
+} 
+
+#dialogSecond{ 
+    background-color:#fff; 
+    height:570px; 
+    left:45%; 
+    margin:-200px 0 0 -200px; 
+    padding:1px; 
+    position:fixed !important; /* 浮动对话框 */ 
+    position:absolute; 
+    top:37%; 
+    width:500px; 
+    z-index:5; 
+    border-radius:8px; 
     display:none;
    
 } 
+#dialogname{ 
+    background-color:#fff; 
+    height:170px; 
+    left:45%; 
+    margin:-200px 0 0 -200px; 
+    padding:1px; 
+    position:fixed !important; /* 浮动对话框 */ 
+    position:absolute; 
+    top:37%; 
+    width:500px; 
+    z-index:5; 
+    border-radius:8px; 
+    display:none;
+   
+} 
+
+
+
 #pbox {
     height: 45px;
     border-bottom: 1px solid #e3e8ee;
@@ -417,16 +458,29 @@ input.divBottom {
     color:#c9cdc2;
     margin: 10px;
 }
+input.divBottomname{
+    border-radius: 4px;
+    border: 1px solid #c9cdc2;
+    height: 30px;
+    width: 440px;
+    text-indent: 10px;
+    font-size: 14px;
+    color:#c9cdc2;
+    margin:  0;
+    position: relative;
+    top:10px;
+}
 
-input divBottom :hover{
+input.divBottom:hover{
     border: 1px solid #5cadff;
 }
 
 .line{
-    widows: 520px;   
+    width: 500px;   
     border-bottom: 1px solid #e3e8ee;
-    margin-top:20px;
+    margin:0px;
 }
+
 .buttonType{
     margin-top:10px;
     padding-right: 20px;
@@ -485,3 +539,4 @@ ul.pagination li a {
 .active{
 	background-color: #7FFFAA;
 }
+

@@ -28,13 +28,14 @@
     <div class="managerText"><strong>帐号管理</strong></div>        
     <div class="buttonCont">
         <div class="rButton">
-            <button class="button1">添加帐号</button>
-            <button class="button2"><a href="javascript:showBg();">批量添加账号</a></button>
+            <button class="button1">添加账号</button>
+            <button class="button2">批量添加账号</button>
             <button class="button3">批量删除</button>
-            <button class="button4"><a href="javascript:showBg();">导出表格数据</a></button>
+            <button class="button4">导出表格数据</button>
             <button class="button5">导出选中数据</button>
-            <button class="button6"><a href="javascript:showBg();" id="one">上传文件</a></button>
-            <button class="button7"><a href="javascript:showBg();" id="tow">模版下载</a></button>
+            <button class="button6" id="showFilename" onclick="setFilename()">上传文件</button>
+            <input  id="pictureFile" type="file" onchange="setSpanCon()" name="pictureFile" style="opacity: 0">          
+            <button class="button7">模版下载</button>
         </div>
         <div class="tSearch" >
                 <form action="" class="tSearch-form">
@@ -206,15 +207,6 @@
             </div>
         </div>
 
-        <div class="pageForm">
-            <form >
-                <ul class="pagination"></ul>
-                <input type="hidden" id="currentPage" name="currentPage" value="1"></input>
-                <input type="hidden" id="totalPage" value="20"></input>
-            </form>
-        </div>
-
-
 <!-- 弹出层添加帐号 -->
 <div id="main">
     <div id="fullbg"></div> 
@@ -248,7 +240,67 @@
                         <input type="text" placeholder="备注" class="divBottom">
                     </div>
                 </div>
-             
+
+                <div class="littleContainer">
+                    <div class="textname">可以使用天数/天，填整数，不填则表示无限时长</div>
+                    <div >
+                        <input type="text"  placeholder="使用时长" class="divBottom">
+                    </div>
+                </div>             
+
+            </form> 
+                <div class="line"></div>
+                <div class="buttonType">
+                    <input type="submit"   value="确定"  class="sureButton">
+                    <input type="reset"   value="取消"  class="closeButton"  name="closeButton1"  >
+                </div>
+                </div>
+    </div>
+</div> 
+
+<!-- 批量添加帐号 -->
+<div id="maintow">
+    <div id="fullbg"></div> 
+    <div id="dialogSecond">
+        <div id="pbox">
+            <p class="add"><strong>批量添加帐号</strong></p>
+        </div> 
+        <form method="post" action="">
+                <div class="littleContainer">
+                    <div class="star">*</div>
+                    <div class="textname">帐号前缀</div>
+                    <div >
+                        <input type="text" name="username" placeholder="帐号" class="divBottom">
+                        <span >请填写帐号前缀</span>
+                    </div>
+                
+                </div>
+                
+                <div class="littleContainer">
+                    <div class="star">*</div>
+                    <div class="textname">密码</div>
+                    <div >
+                        <input type="password" name="password" placeholder="密码" class="divBottom">
+                        <span>请填写密码</span>
+                    </div>
+                </div>
+
+                <div class="littleContainer">
+                    <div class="textname">备注</div>
+                    <div>
+                        <input type="text" placeholder="备注" class="divBottom">
+                    </div>
+                </div>
+
+
+                <div class="littleContainer">
+                    <div class="textname">帐号个数/整数</div>
+                    <div>
+                        <input type="text" placeholder="帐号个数" class="divBottom">
+                    </div>
+                </div>
+
+
                 <div class="littleContainer">
                     <div class="textname">可以使用天数/天，填整数，不填则表示无限时长</div>
                     <div >
@@ -259,18 +311,45 @@
                 <div class="line"></div>
                 <div class="buttonType">
                     <input type="submit"   value="确定"  class="sureButton">
-                    <input type="reset"   value="取消"  class="closeButton" href="#" onclick="closeBg();" >
+                    <input type="reset"   value="取消"  class="closeButton"  name="closeButton2" >
                 </div>
                 </div>
-    
     </div>
 </div> 
 
-<!-- 批量添加帐号 -->
+<!-- 文件名 -->
+<div id="maintow">
+    <div id="fullbg"></div> 
+    <div id="dialogname">
+        <div id="pbox">
+            <p class="add"><strong>批量添加帐号</strong></p>
+        </div> 
+        <form method="post" action="">
+                    <div >
+                        <input type="text" name="textname" placeholder="文件名" class="divBottom">
+                        <span></span>
+                    </div>
+            </form>
+                <div class="line"></div>
+                <div class="buttonType">
+                    <input type="submit"   value="确定"  class="sureButton">
+                    <input type="reset"   value="取消"  class="closeButton"  name="closeButton2" >
+                </div>
+                </div>
+    </div>
+</div> 
 
 
 
 <!-- 分页 -->
+
+        <div class="pageForm">
+            <form >
+                <ul class="pagination"></ul>
+                <input type="hidden" id="currentPage" name="currentPage" value="1"></input>
+                <input type="hidden" id="totalPage" value="20"></input>
+            </form>
+        </div>
 
 
 <script  type="text/javascript" src="js/accountManagement.js"></script>
