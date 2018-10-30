@@ -48,7 +48,50 @@
 			var pictureFile = document.getElementById("pictureFile");
 			pictureFile.click();
 		}
+		//编辑
+		$(".write").click(function(){
+			var bh = $("body").height();
+				var bw = $("body").width(); 
+				$("#fullbg").css({ 
+				height:bh, 
+				width:bw, 
+				display:"block" 
+				}); 
+				$("#dialogDescribe").show();
+			}) 
+		$('input[name=closeButtonD]').click(function(){
+				$("#fullbg,#dialogDescribe").hide(); 
+			})
+
+		//删除
+		   $(function(){
+				$("tbody>tr:odd").addClass("odd");
+				$("tbody>tr:even").addClass("even");
+			    //删除按钮点击事件
+			    $(".delete").click(function(){
+			     //获取按钮的父节点的父节点删除
+			     $(this).parent().parent().remove();
+			    });			    
+			     $("tr").mouseenter(function(){
+			     $(this).css({"opacity":1}).siblings().css({"opacity":1});
+			    });
+			     $("table").mouseleave(function(){
+			     $("tr").css({"opacity":1});
+			    });
+			    
+			   })
+
 		
+
+		//添加
+		$(function() {
+			$(".sureButtonadd").click(function() {
+			var tr = "<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>";
+			//$("table").append(tr);
+			$("table tr:eq(1)").before(tr);
+			});
+			});
+			   	
 			
 //表单认证
         $('input[name=username]').blur(function(){
@@ -85,10 +128,20 @@
         console.log($('input[id=selectHead]')[0]);
         $(function(){
             $("#selectHead").click(function(){
-                $("input").prop("checked",this.checked);
+				$("input").prop("checked",this.checked);
+				
             });
         });
 
+		$("tbody>tr").click(function(){
+			$(this)
+			.addClass('selected')
+			.siblings()
+			.removeClass('selected')
+			.end()
+			.find('checkbox').attr('checked',this.checked);
+		})
+		
 // 分页
     $().ready(function(){
         var curPage =$("#currentPage").val();

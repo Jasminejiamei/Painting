@@ -251,7 +251,7 @@
             </form> 
                 <div class="line"></div>
                 <div class="buttonType">
-                    <input type="submit"   value="确定"  class="sureButton">
+                    <input type="submit"   value="确定"  class="sureButtonadd">
                     <input type="reset"   value="取消"  class="closeButton"  name="closeButton1"  >
                 </div>
                 </div>
@@ -310,7 +310,7 @@
             </form> 
                 <div class="line"></div>
                 <div class="buttonType">
-                    <input type="submit"   value="确定"  class="sureButton">
+                    <input type="submit"   value="确定"  class="sureButtonadd">
                     <input type="reset"   value="取消"  class="closeButton"  name="closeButton2" >
                 </div>
                 </div>
@@ -322,7 +322,7 @@
     <div id="fullbg"></div> 
     <div id="dialogname">
         <div id="pbox">
-            <p class="add"><strong>批量添加帐号</strong></p>
+            <p class="add"><strong>文件名</strong></p>
         </div> 
         <form method="post" action="">
                     <div >
@@ -350,8 +350,56 @@
                 <input type="hidden" id="totalPage" value="20"></input>
             </form>
         </div>
+<!-- 编辑 -->
+<div id="main">
+    <div id="fullbg"></div> 
+    <div id="dialogDescribe">
+        <div id="pbox">
+            <p class="add"><strong>编辑</strong></p>
+        </div> 
+        <form method="post" action="">
+                <div class="littleContainer">
+                    <div class="star">*</div>
+                    <div class="textname">帐号</div>
+                    <div >
+                        <input type="text" name="username" placeholder="帐号" class="divBottom" disabled>
+                        <span >请填写用户名</span>
+                    </div>
+                
+                </div>
+                
+                <div class="littleContainer">
+                    <div class="star">*</div>
+                    <div class="textname">密码</div>
+                    <div >
+                        <input type="password" name="password" placeholder="密码" class="divBottom">
+                        <span>请填写密码</span>
+                    </div>
+                </div>
 
+                <div class="littleContainer">
+                    <div class="textname">备注</div>
+                    <div>
+                        <input type="text" placeholder="备注" class="divBottom">
+                    </div>
+                </div>
 
+                <div class="littleContainer">
+                    <div class="textname">可以使用天数/天，填整数，不填则表示无限时长</div>
+                    <div >
+                        <input type="text"  placeholder="使用时长" class="divBottom">
+                    </div>
+                </div>             
+
+            </form> 
+                <div class="line"></div>
+                <div class="buttonType">
+                    <input type="submit"   value="确定"  class="sureButton">
+                    <input type="reset"   value="取消"  class="closeButton"  name="closeButtonD"  >
+                </div>
+                </div>
+    </div>
+</div> 
 <script  type="text/javascript" src="js/accountManagement.js"></script>
 </body>
 
