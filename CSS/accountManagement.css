@@ -174,39 +174,38 @@ img{
     background-color: #3e8e41;
 }
 
-#parent >li> span{
-    text-align: center;
-    border:1px solid gray;
-    background:rgb(223, 214, 214);
-    display: block;
-    width:55px;
-    height: 35px;
-    }
- li {
-    line-height: 37px;
-    position: relative;
-    left:170px;
-    display: block;
-    }
-       
-li>ul{
-    line-height: 37px;
-    position: relative;
-    right: 170px;
-    display: none;
-    }
-#parent span:hover + ul{
-    display:block;
-    color: grey;
-    }
+
+.even{
+    background-color:#F5F7F9;
+}
+.odd{
+    background-color: white;
+}
+
 .tSearch{
     height: 45px;
     width: 400px;  
     float: right;
     padding-right: 20px;
-    
-  
     }
+
+.btnDropdown {
+    background-color: #eeeeee;
+    border: 1px solid #778181;
+    color: #778181;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+    position: relative;
+    right: 8px;
+   
+}
+
+
 .tSearch-form{
     display:block;
     width:300px;
@@ -214,25 +213,46 @@ li>ul{
    
 }
 
-.formText{
-    display:block;
-    width:300px;
+.formText {
+    display: block;
+    width: 300px;
     height: 32px;
-    border:1px solid gray;
-    position: relative;
-    top:0px; 
-    left: 60px;;
-
+    border: 1px solid gray;
+    position: absolute;
+    top: 162px;
+    left: 1025px;
+    text-indent: 10px;
+}
+.formPic {
+    display: block;
+    width: 50px;
+    height: 32px;
+    background-color: #eeeeee;
+    border: 1px solid #778181;
+    color: #778181;
+    position: absolute;
+    top: 162px;
+    left: 1275px;
+    border-radius: 2px;
 }
 
-.formPic{
-    display:block;
-    width:50px;
-    height:32px;
-    border:1px solid gray;
+
+ul.dropdown-menu {
     position: relative;
-    top:-32px; 
-    left:310px;
+    left: -7px;
+    width: 68px;
+    z-index:999;
+}
+
+ul.dropdown-menu li {
+    height: 20px;
+    border: 1px solid #778181;
+    display:none;
+}
+a {
+    text-decoration: none;
+    outline: none;
+    color: #778181;
 }
 
 .tableStyle{
@@ -254,6 +274,7 @@ td{
     border: 1px solid #D7DDE4;
     color: #657180;
 }
+
 
 .tableHead{
     widows: 1306px;
@@ -346,7 +367,7 @@ td{
     -khtml-opacity:0.5; 
 } 
 
-#dialog{ 
+#dialog,#dialogDescribe{ 
     background-color:#fff; 
     height:485px; 
     left:45%; 
@@ -485,7 +506,7 @@ input.divBottom:hover{
     margin-top:10px;
     padding-right: 20px;
 }
-.sureButton{
+.sureButton,.sureButtonadd{
     width: 70px;
     height: 35px;
     font-size: 15px;
@@ -521,7 +542,7 @@ ul.pagination {
     padding: 0;
     margin: 30px  0px 0px 0px;
     position: absolute;
-    left: 33%;
+    left: 35%;
 }
 
 ul.pagination li {
@@ -529,14 +550,15 @@ ul.pagination li {
 }
 
 ul.pagination li a {
+    font-size: 16px;
     color: black;
     float: left;
-    padding: 1px 30px;
+    padding: 10px 20px;
     text-decoration: none;
-    border: 1px solid blue;
+    border: 1px solid#eeeeee;
 	border-radius:3px;
 }
-.active{
+ul.pagination li：hover{
 	background-color: #7FFFAA;
 }
 

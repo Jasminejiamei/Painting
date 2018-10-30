@@ -1,37 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>定义input type="file" 的样式</title>
-<style type="text/css">
-body{ font-size:14px;}
-input{ vertical-align:middle; margin:0; padding:0}
-.file-box{ position:relative;width:340px}
-.txt{ height:22px; border:1px solid #cdcdcd; width:180px;}
-.btn{ background-color:#FFF; border:1px solid #CDCDCD;height:24px; width:70px;}
-.file{ position:absolute; top:0; right:80px; height:24px; filter:alpha(opacity:0);opacity: 0;width:260px }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 </head>
 <body>
-        <form action="#" method="post" enctype="multipart/form-data">
-                <input class="btn btn-xlarge btn-clean-one" id="pictureFile" type="file" onchange="setSpanCon()" name="pictureFile" style="opacity: 0">
-                <span class="btn btn-xlarge btn-clean-one" id="showFilename" onclick="setFilename()">选择文件</span>
-                <script type="text/javascript">
-                    function setFilename(){
-                        var pictureFile = document.getElementById("pictureFile");
-                        pictureFile.click();
-                    }
-                    function setSpanCon(){
-                        var pictureFile = document.getElementById("pictureFile");
-                        var FullFilename = pictureFile.value;
-                        var aFilename = FullFilename.split('\\');
-                        var filename = aFilename[aFilename.length-1];
-                        var spanFilename = document.getElementById("showFilename");
-                        spanFilename.innerHTML = filename;
-                    }
-                </script>
-                <input class="btn btn-xlarge btn-clean-one" type="submit" value="提交"/>
-</form>
+    <form id="form1" action="#">
+        <p>评论：</p>
+        <p>姓名：<input type="text" name="username" id="username"/></p>
+        <p>内容：<textarea name="content" id="content" rows="2" cols="20"></textarea></p>
+        <p><input  type="button" id="send" value="提交"/></p>
+    </form>
+    <div class="comment">有了：</div>
+    <div id="resText"></div>
 
+    <script>
+        $(function(){
+            $("#send").click(function(){
+                $.get("/mock/5bac6f1f0132334db71671a8/example/query",{
+                    username:$("#username").val(),
+                    content:$("#content").val()
+                },function(data,textStatus){
+                    $("#resText").html(data);
+                
+                })
+            })
+        })
+    </script>
 </body>
 </html>
+
+<!-- 搜索框 -->
+<div class="tSearch" >
+    <form action="" class="tSearch-form">
+        <input type="search" name="keyword" class="formText" placeholder="请输入搜索关键字">
+        <input type="submit"  class="formPic">
+    </form>  
+</div>
+</div>
+
+<div class="pageForm">
+        <form >
+            <ul class="pagination"></ul>
+            <input type="hidden" id="currentPage" name="currentPage" value="1"></input>
+            <input type="hidden" id="totalPage" value="20"></input>
+        </form>
+    </div>

@@ -37,14 +37,24 @@
             <input  id="pictureFile" type="file" onchange="setSpanCon()" name="pictureFile" style="opacity: 0">          
             <button class="button7">模版下载</button>
         </div>
-        <div class="tSearch" >
-                <form action="" class="tSearch-form">
-                    <input type="search" name="keyword" class="formText" placeholder="请输入搜索关键字">
-                    <input type="submit"  class="formPic">
-                </form>  
-            </div>
-        </div>
+<!-- 搜索框 -->
+<div class="tSearch" >
+        <form action="" class="tSearch-form">
 
+                <button type="button" class="btnDropdown" >
+                        备注
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">帐号</a></li>
+                        <li><a href="#">注册时间</a></li>
+                        <li><a href="#">备注</a></li>
+                    </ul>
+            
+            <input type="search" name="keyword" class="formText" placeholder="请输入搜索关键字">
+            <input type="submit"  class="formPic">
+        </form>  
+    </div>
+    </div>
 
 <!-- 表格 -->
         <div  class="tableStyle">
@@ -251,7 +261,7 @@
             </form> 
                 <div class="line"></div>
                 <div class="buttonType">
-                    <input type="submit"   value="确定"  class="sureButton">
+                    <input type="submit"   value="确定"  class="sureButtonadd" name="sureButtonadd">
                     <input type="reset"   value="取消"  class="closeButton"  name="closeButton1"  >
                 </div>
                 </div>
@@ -310,7 +320,7 @@
             </form> 
                 <div class="line"></div>
                 <div class="buttonType">
-                    <input type="submit"   value="确定"  class="sureButton">
+                    <input type="submit"   value="确定"  class="sureButtonadd" name="sureButtonadd">
                     <input type="reset"   value="取消"  class="closeButton"  name="closeButton2" >
                 </div>
                 </div>
@@ -322,7 +332,7 @@
     <div id="fullbg"></div> 
     <div id="dialogname">
         <div id="pbox">
-            <p class="add"><strong>批量添加帐号</strong></p>
+            <p class="add"><strong>文件名</strong></p>
         </div> 
         <form method="post" action="">
                     <div >
@@ -343,15 +353,69 @@
 
 <!-- 分页 -->
 
-        <div class="pageForm">
-            <form >
-                <ul class="pagination"></ul>
-                <input type="hidden" id="currentPage" name="currentPage" value="1"></input>
-                <input type="hidden" id="totalPage" value="20"></input>
-            </form>
-        </div>
+<div class="pageForm">
+        <form >
+                <ul class="pagination">
+                        <li><a href="#">&laquo;</a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">&raquo;</a></li>
+                    </ul>
+        </form>
+</div>
+<!-- 编辑 -->
+<div id="main">
+    <div id="fullbg"></div> 
+    <div id="dialogDescribe">
+        <div id="pbox">
+            <p class="add"><strong>编辑</strong></p>
+        </div> 
+        <form method="post" action="">
+                <div class="littleContainer">
+                    <div class="star">*</div>
+                    <div class="textname">帐号</div>
+                    <div >
+                        <input type="text" name="username" placeholder="帐号" class="divBottom" disabled>
+                        <span >请填写用户名</span>
+                    </div>
+                
+                </div>
+                
+                <div class="littleContainer">
+                    <div class="star">*</div>
+                    <div class="textname">密码</div>
+                    <div >
+                        <input type="password" name="password" placeholder="密码" class="divBottom">
+                        <span>请填写密码</span>
+                    </div>
+                </div>
 
+                <div class="littleContainer">
+                    <div class="textname">备注</div>
+                    <div>
+                        <input type="text" placeholder="备注" class="divBottom">
+                    </div>
+                </div>
 
+                <div class="littleContainer">
+                    <div class="textname">可以使用天数/天，填整数，不填则表示无限时长</div>
+                    <div >
+                        <input type="text"  placeholder="使用时长" class="divBottom">
+                    </div>
+                </div>             
+
+            </form> 
+                <div class="line"></div>
+                <div class="buttonType">
+                    <input type="submit"   value="确定"  class="sureButton">
+                    <input type="reset"   value="取消"  class="closeButton"  name="closeButtonD"  >
+                </div>
+                </div>
+    </div>
+</div> 
 <script  type="text/javascript" src="js/accountManagement.js"></script>
 </body>
 
