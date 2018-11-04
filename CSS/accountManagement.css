@@ -181,7 +181,40 @@ img{
 .odd{
     background-color: white;
 }
+<<<<<<< HEAD
 
+=======
+.seleted{
+    background-color: red;
+}
+
+/**/
+#parent >li> span{
+    text-align: center;
+    border:1px solid gray;
+    background:rgb(223, 214, 214);
+    display: block;
+    width:55px;
+    height: 35px;
+    }
+ li {
+    line-height: 37px;
+    position: relative;
+    left:170px;
+    display: block;
+    }
+       
+li>ul{
+    line-height: 37px;
+    position: relative;
+    right: 170px;
+    display: none;
+    }
+#parent span:hover + ul{
+    display:block;
+    color: grey;
+    }
+>>>>>>> 62a3c6ba9867f0c3500cd27e105296b0f2fd3c1f
 .tSearch{
     height: 45px;
     width: 400px;  
