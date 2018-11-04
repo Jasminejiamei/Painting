@@ -142,7 +142,7 @@
                 }
               });        
  
-//全选 全不选 
+//全选 全不选  
         console.log($('input[id=selectHead]')[0]);
         $(function(){
             $("#selectHead").click(function(){
