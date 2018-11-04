@@ -89,7 +89,7 @@
 			$("#fullbg,#dialog,#dialogSecond,#dialogname").hide();
 			})
 			})
-
+ 
 		//文件确认
 		$(function() {
 			$(".sureButton").click(function() {

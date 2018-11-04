@@ -526,7 +526,7 @@ input.divBottomname{
     position: relative;
     top:10px;
 }
-
+ 
 input.divBottom:hover{
     border: 1px solid #5cadff;
 }
