@@ -74,6 +74,7 @@ img{
    
 }
 
+/*众多的按钮们*/
 .button1{
     background-color: #00cc66; 
     border: 1px solid  #00cc66;
@@ -169,51 +170,72 @@ img{
     cursor: pointer;
     border-radius: 4px; 
 }
-
-.button:hover {
+.button1:hover {
     background-color: #3e8e41;
 }
+.button2:hover {
+    background-color: #3e8e41;
+}
+.button4:hover {
+    background-color: rgb(16, 164, 233);
+}
+.button6:hover {
+    background-color: #d5dbdb;
+}
+.button7:hover {
+    background-color: #d5dbdb;
+}
 
 
-.even{
+
+/*表格里面的内容*/
+.thead{
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    background-color: #F5F7F9;
+}
+.even
+{
+    background-color:white;
+}
+/*奇数行样式*/
+.odd{
     background-color:#F5F7F9;
 }
-.odd{
-    background-color: white;
+/*偶数行样式*/
+.selected{
+    background-color:#ebf7ff;
 }
-
-
-.seleted{
+.edit-button {
+    border: none;
+    height: 26px;
+    padding:2px 7px;
+    background-color: #2db7f5;
+    border-radius: 2px;
+    color: #FFF;
+    position: relative;
+    left: 25px;
+}
+.edit-button:hover {
+    background-color: #57c5f7;
+}
+.delete-button {
+    border: none;
+    height: 26px;
+    padding:2px 7px;
     background-color: red;
+    border-radius: 2px;
+    color: #FFF;
+    position: relative;
+    left: 25px;
+}
+.delete-button:hover {
+    background-color:rgba(255, 0, 0, 0.76);
 }
 
-/**/
-#parent >li> span{
-    text-align: center;
-    border:1px solid gray;
-    background:rgb(223, 214, 214);
-    display: block;
-    width:55px;
-    height: 35px;
-    }
- li {
-    line-height: 37px;
-    position: relative;
-    left:170px;
-    display: block;
-    }
-       
-li>ul{
-    line-height: 37px;
-    position: relative;
-    right: 170px;
-    display: none;
-    }
-#parent span:hover + ul{
-    display:block;
-    color: grey;
-    }
 
+/* 原表格样式，修改后无用*/
 .tSearch{
     height: 45px;
     width: 400px;  
@@ -233,7 +255,7 @@ li>ul{
     cursor: pointer;
     border-radius: 4px;
     position: absolute;
-    right: 320px;
+    left: 970px;
    
 }
 
@@ -247,25 +269,34 @@ li>ul{
 
 .formText {
     display: block;
-    width: 300px;
+    width: 250px;
     height: 32px;
     border: 1px solid gray;
     position: absolute;
     top: 162px;
-    left: 1025px;
+    left: 1035px;
     text-indent: 10px;
 }
 .formPic {
     display: block;
-    width: 50px;
-    height: 32px;
+    width: 40px;
+    height: 30px;
     background-color: #eeeeee;
     border: 1px solid #778181;
     color: #778181;
     position: absolute;
     top: 162px;
-    left: 1275px;
+    left: 1284px;
     border-radius: 2px;
+    border-top-right-radius: 4px;
+}
+
+.icon-sousuo{
+    font-size: 51px;
+    position: absolute;
+    top: 140px;
+    left: 1293px;
+    border-top-right-radius: 4px;
 }
 
 
@@ -279,9 +310,12 @@ ul.dropdown-menu {
 }
 
 ul.dropdown-menu li {
-    height: 25px;
+    height:25px;
     border: 1px solid #778181;
-    
+    background-color: white;
+    position: relative;
+    left: 180px;
+
 }
 
 a {
@@ -290,6 +324,11 @@ a {
     color: #778181;
 }
 
+table {
+    width: 1306px;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
 .tableStyle{
     width:1306px;
     margin: 0 auto;
@@ -321,6 +360,7 @@ td{
 
 .tableBody{
     width:1306px;
+    height:1000px;
     overflow-y: hidden;
     overflow-x: hidden;
     background-color: #F5F7F9;
@@ -335,33 +375,6 @@ td{
     background-color: #ffffff;
 }
 
-.col1{
-    width: 70px;
-}
-.col2{
-    width: 100px;
-}
-.col3{
-    width: 100px;
-}
-.col4{
-    width: 180px;
-}
-.col5{
-    width: 180px;
-}
-.col6{
-    width: 100px;
-}
-.col7{
-    width: 180px;
-}
-.col8{
-    width: 100px;
-}
-.col9{
-    width: 100px;
-}
 .write{
     background-color: #4CAF50; /* Green */
     border: 1px solid  #4CAF50;
@@ -430,8 +443,8 @@ td{
     z-index:5; 
     border-radius:8px; 
     display:none;
-   
 } 
+
 #dialogname{ 
     background-color:#fff; 
     height:170px; 
@@ -444,10 +457,8 @@ td{
     width:500px; 
     z-index:5; 
     border-radius:8px; 
-    display:none;
-   
+    display:none;   
 } 
-
 
 
 #pbox {
@@ -549,9 +560,15 @@ input.divBottom:hover{
     border:#5cadff;
     border-radius: 4px;
     background-color:#1296DB;
-    float: right;
-    
+    float: right;  
 }
+.sureButtonadd:focus{
+    background-color: rgb(11, 111, 165);
+}
+.sureButton:focus{
+    background-color: rgb(11, 111, 165);
+}
+
 .closeButton{
     width: 70px;
     height: 35px;
@@ -577,7 +594,8 @@ ul.pagination {
     padding: 0;
     margin: 30px  0px 0px 0px;
     position: absolute;
-    left: 38%;
+    top: 780px;
+    left: 500px;
 }
 
 ul.pagination li {
@@ -586,14 +604,21 @@ ul.pagination li {
 
 ul.pagination li a {
     font-size: 16px;
-    color: gray;
+    color: rgb(100, 97, 97);
     float: left;
     padding: 10px 20px;
     text-decoration: none;
     border: 1px solid#eeeeee;
 	border-radius:3px;
 }
-ul.pagination li：hover{
-	background-color: #7FFFAA;
+ul.pagination li a:hover{
+	background-color: rgb(184, 181, 181);
 }
 
+/*加载*/
+#loading  
+{  
+    position:fixed;  
+    top:40%;  
+    left:630px;   
+}  

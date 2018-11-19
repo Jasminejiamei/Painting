@@ -7,6 +7,7 @@
     <title>帐号管理--小A</title>
     <link rel="stylesheet" type="text/css" media="screen" href="CSS/base.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="CSS/accountManagement.css" />
+    <link rel="stylesheet" type="text/css"  href="CSS/font/iconfont.css"/>
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 </head>
 <body>
@@ -51,16 +52,17 @@
                     </ul>
             
             <input type="search" name="keyword" class="formText" placeholder="请输入搜索关键字">
-            <input type="submit"  class="formPic">
+            <img src="images/search.png" class="formPic"> 
         </form>  
     </div>
     </div>
 
+
 <!-- 表格 -->
         <div  class="tableStyle">
-            <div class="tableHead">
             <table>
-                <thread>       
+             <p id="loading">正在加载中……</p>
+              <!-- <thread>       
                     <tr >
                         <th class="col1"><input type="checkbox" id="selectHead"></input></th>
                         <th class="col2"><em>帐号</em></th>
@@ -72,147 +74,8 @@
                         <th class="col8">备注</th>
                         <th class="col9">操作</th></tr>
                 </thread>
-            </table>
-            </div>
+                </tbody>-->
 
-            <div class="tableBody">
-            <table>
-                <tbody>
-                    <tr >
-                        <td class="col1"><input type="checkbox" ></input></td>
-                        <td class="col2">409ban60</td>
-                        <td class="col3">409ban</td>
-                        <td class="col4">2018-10-15 20:18:59</td>
-                        <td class="col5">暂未登录</td>
-                        <td class="col6">无限</td>
-                        <td class="col7">无</td> 
-                        <td class="col8">英才409班</td>
-                        <td class="col9"><buttom class="write" >编辑</buttom><buttom class="delete" >删除</buttom></td>
-                    </tr>
-                    <tr >
-                        <td class="col1"><input type="checkbox"></input></td>
-                        <td class="col2">409ban60</td>
-                        <td class="col3">409ban</td>
-                        <td class="col4">2018-10-15 20:18:59</td>
-                        <td class="col5">暂未登录</td>
-                        <td class="col6">无限</td>
-                        <td class="col7">无</td> 
-                        <td class="col8">英才409班</td>
-                        <td class="col9"><buttom class="write" >编辑</buttom><buttom class="delete" >删除</buttom></td>
-                    </tr>
-                    <tr >
-                        <td class="col1"><input type="checkbox"></input></td>
-                        <td class="col2">409ban60</td>
-                        <td class="col3">409ban</td>
-                        <td class="col4">2018-10-15 20:18:59</td>
-                        <td class="col5">暂未登录</td>
-                        <td class="col6">无限</td>
-                        <td class="col7">无</td> 
-                        <td class="col8">英才409班</td>
-                        <td class="col9"><buttom class="write" >编辑</buttom><buttom class="delete" >删除</buttom></td>
-                     </tr>   
-                     <tr >
-                        <td class="col1"><input type="checkbox"></input></td>
-                        <td class="col2">409ban60</td>
-                        <td class="col3">409ban</td>
-                        <td class="col4">2018-10-15 20:18:59</td>
-                        <td class="col5">暂未登录</td>
-                        <td class="col6">无限</td>
-                        <td class="col7">无</td> 
-                        <td class="col8">英才409班</td>
-                        <td class="col9"><buttom class="write" >编辑</buttom><buttom class="delete" >删除</buttom></td>
-                     </tr> 
-                     <tr >
-                        <td class="col1"><input type="checkbox"></input></td>
-                        <td class="col2">409ban60</td>
-                        <td class="col3">409ban</td>
-                        <td class="col4">2018-10-15 20:18:59</td>
-                        <td class="col5">暂未登录</td>
-                        <td class="col6">无限</td>
-                        <td class="col7">无</td> 
-                        <td class="col8">英才409班</td>
-                        <td class="col9"><buttom class="write" >编辑</buttom><buttom class="delete" >删除</buttom></td>
-                     </tr> 
-                     <tr >
-                        <td class="col1"><input type="checkbox"></input></td>
-                        <td class="col2">409ban60</td>
-                        <td class="col3">409ban</td>
-                        <td class="col4">2018-10-15 20:18:59</td>
-                        <td class="col5">暂未登录</td>
-                        <td class="col6">无限</td>
-                        <td class="col7">无</td> 
-                        <td class="col8">英才409班</td>
-                        <td class="col9"><buttom class="write" >编辑</buttom><buttom class="delete" >删除</buttom></td>
-                     </tr> 
-                     <tr >
-                        <td class="col1"><input type="checkbox"></input></td>
-                        <td class="col2">409ban60</td>
-                        <td class="col3">409ban</td>
-                        <td class="col4">2018-10-15 20:18:59</td>
-                        <td class="col5">暂未登录</td>
-                        <td class="col6">无限</td>
-                        <td class="col7">无</td> 
-                        <td class="col8">英才409班</td>
-                        <td class="col9"><buttom class="write" >编辑</buttom><buttom class="delete" >删除</buttom></td>
-                     </tr> 
-
-                     <tr >
-                        <td class="col1"><input type="checkbox"></input></td>
-                        <td class="col2">409ban60</td>
-                        <td class="col3">409ban</td>
-                        <td class="col4">2018-10-15 20:18:59</td>
-                        <td class="col5">暂未登录</td>
-                        <td class="col6">无限</td>
-                        <td class="col7">无</td> 
-                        <td class="col8">英才409班</td>
-                        <td class="col9"><buttom class="write" >编辑</buttom><buttom class="delete" >删除</buttom></td>
-                     </tr> 
-                     
-                     <tr >
-                        <td class="col1"><input type="checkbox"></input></td>
-                        <td class="col2">409ban60</td>
-                        <td class="col3">409ban</td>
-                        <td class="col4">2018-10-15 20:18:59</td>
-                        <td class="col5">暂未登录</td>
-                        <td class="col6">无限</td>
-                        <td class="col7">无</td> 
-                        <td class="col8">英才409班</td>
-                        <td class="col9"><buttom class="write" >编辑</buttom><buttom class="delete" >删除</buttom></td>
-                     </tr> 
-                     <tr >
-                        <td class="col1"><input type="checkbox"></input></td>
-                        <td class="col2">409ban60</td>
-                        <td class="col3">409ban</td>
-                        <td class="col4">2018-10-15 20:18:59</td>
-                        <td class="col5">暂未登录</td>
-                        <td class="col6">无限</td>
-                        <td class="col7">无</td> 
-                        <td class="col8">英才409班</td>
-                        <td class="col9"><buttom class="write" >编辑</buttom><buttom class="delete" >删除</buttom></td>
-                     </tr>
-                     <tr >  
-                        <td class="col1"><input type="checkbox"></input></td>
-                        <td class="col2">409ban60</td>
-                        <td class="col3">409ban</td>
-                        <td class="col4">2018-10-15 20:18:59</td>
-                        <td class="col5">暂未登录</td>
-                        <td class="col6">无限</td>
-                        <td class="col7">无</td> 
-                        <td class="col8">英才409班</td>
-                        <td class="col9"><buttom class="write" >编辑</buttom><buttom class="delete" >删除</buttom></td>
-                     </tr>
-                     <tr >
-                        <td class="col1"><input type="checkbox"></input></td>
-                        <td class="col2">409ban60</td>
-                        <td class="col3">409ban</td>
-                        <td class="col4">2018-10-15 20:18:59</td>
-                        <td class="col5">暂未登录</td>
-                        <td class="col6">无限</td>
-                        <td class="col7">无</td> 
-                        <td class="col8">英才409班</td>
-                        <td class="col9"><buttom class="write" >编辑</buttom><buttom class="delete" >删除</buttom></td>
-                     </tr>
-                </tbody>
             </table>
             </div>
         </div>
@@ -247,14 +110,14 @@
                 <div class="littleContainer">
                     <div class="textname">备注</div>
                     <div>
-                        <input type="text" placeholder="备注" class="divBottom">
+                        <input type="text" name="addattention" placeholder="备注" class="divBottom">
                     </div>
                 </div>
 
                 <div class="littleContainer">
                     <div class="textname">可以使用天数/天，填整数，不填则表示无限时长</div>
                     <div >
-                        <input type="text"  placeholder="使用时长" class="divBottom">
+                        <input type="text" name="date"  placeholder="使用时长" class="divBottom">
                     </div>
                 </div>             
 
@@ -342,7 +205,7 @@
             </form>
                 <div class="line"></div>
                 <div class="buttonType">
-                    <input type="submit"   value="确定"  class="sureButtonadd">
+                    <input type="submit"   value="确定"  class="sureButton">
                     <input type="reset"   value="取消"  class="closeButton"  name="closeButton2" >
                 </div>
                 </div>
