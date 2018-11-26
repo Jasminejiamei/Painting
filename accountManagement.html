@@ -7,7 +7,7 @@
     <title>帐号管理--小A</title>
     <link rel="stylesheet" type="text/css" media="screen" href="CSS/base.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="CSS/accountManagement.css" />
-    <link rel="stylesheet" type="text/css"  href="CSS/font/iconfont.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="CSS/normalize.css"/>
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 </head>
 <body>
@@ -39,12 +39,11 @@
             <button class="button7">模版下载</button>
         </div>
 <!-- 搜索框 -->
-<div class="tSearch" >
+<!-- <div class="tSearch" > 
         <form action="" class="tSearch-form">
-
-                <button type="button" class="btnDropdown" >
-                        备注
-                    </button>
+            <button type="button" class="btnDropdown" >
+                        帐号
+            </button>
                     <ul class="dropdown-menu">
                         <li><a href="#">帐号</a></li>
                         <li><a href="#">注册时间</a></li>
@@ -52,16 +51,42 @@
                     </ul>
             
             <input type="search" name="keyword" class="formText" placeholder="请输入搜索关键字">
-            <img src="images/search.png" class="formPic"> 
+            <button class="iconfontyyy">&#xe60d;</button>
         </form>  
     </div>
+    </div>-->
+    <div id="search-control">
+        <div id="input-search">
+            <div class="search">
+            <span id="showText">账号</span>
+            </div>
+            <input type="text" id="searchText" style="height: 30px;
+            width: 242px;
+            position: relative;
+            top: -12px;
+            left: -4px;
+            border: 1px solid gray;"> 
+            <div id="search-button">
+                <span class="iconfontyyy">&#xe60d;</span>
+            </div>
+        </div>
+        <div id="rearchSelect">
+                <ul>
+                    <li class="li-click">账号</li>
+                    <li>注册时间</li>
+                    <li>备注</li>
+                </ul>
+            </div>
+        </div>
     </div>
+        
 
 
 <!-- 表格 -->
         <div  class="tableStyle">
             <table>
              <p id="loading">正在加载中……</p>
+             <p id="errorLoading">加载失败，请稍后重试……</p>
               <!-- <thread>       
                     <tr >
                         <th class="col1"><input type="checkbox" id="selectHead"></input></th>

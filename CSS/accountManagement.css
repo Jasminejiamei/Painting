@@ -77,7 +77,7 @@ img{
 /*众多的按钮们*/
 .button1{
     background-color: #00cc66; 
-    border: 1px solid  #00cc66;
+    /*border: 1px solid  #00cc66;*/
     color: white;
     padding:8px 10px;
     text-align: center;
@@ -89,7 +89,7 @@ img{
 }
 .button2{
     background-color: #00cc66; 
-    border: 1px solid  #00cc66;
+    /*border: 1px solid  #00cc66;*/
     color: white;
     padding:8px 10px;
     text-align: center;
@@ -101,22 +101,22 @@ img{
 }
 
 .button3{
-    background-color:#F7F7F7; 
-    border: 1px solid gray;
-    color:gray;
+   background-color:#00cc66; 
+   /* border: 1px solid gray;*/
+    color:white;
     padding:8px 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 14px;
-    cursor: pointer;
+    cursor: not-allowed;
     border-radius: 4px;
     opacity: 0.6;
-    cursor: not-allowed;
+
 }
 .button4{
     background-color:#57C5F7;
-    border: 1px solid  #57C5F7;
+    /*border: 1px solid  #57C5F7;*/
     color: white;
     padding:8px 10px;
     text-align: center;
@@ -125,31 +125,31 @@ img{
     font-size: 14px;
     cursor: pointer;
     border-radius: 4px;
+    
 }
 .button5{
-    background-color:#F7F7F7; 
-    border: 1px solid gray;
-    color:gray;
+    background-color:#00cc66; 
+    /*border: 1px solid gray;*/
+    color:white;
     padding:8px 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 14px;
-    cursor: pointer;
+    cursor: not-allowed;
     border-radius: 4px;
     opacity: 0.6;
-    cursor: not-allowed;
 } 
 .button6{
-    background-color:white; 
-    border: 1px solid #778181;
-    color:gray;
+    background-color:#57C5F7; 
+    /*border: 1px solid #778181;*/
+    color:white;
     padding:8px 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 14px;
-    cursor: pointer;
+    cursor:not-allowed;
     border-radius: 4px; 
 }
 #pictureFile{
@@ -159,9 +159,9 @@ img{
     right:70px;
 }
 .button7{
-    background-color:white; 
-    border: 1px solid #778181;
-    color:gray;
+    background-color:#57C5F7; 
+    /*border: 1px solid #778181;*/
+    color:white;
     padding:8px 10px;
     text-align: center;
     text-decoration: none;
@@ -180,13 +180,103 @@ img{
     background-color: rgb(16, 164, 233);
 }
 .button6:hover {
-    background-color: #d5dbdb;
+    background-color: rgb(16, 164, 233);
 }
 .button7:hover {
-    background-color: #d5dbdb;
+    background-color: rgb(16, 164, 233);
 }
 
+@font-face {font-family: 'iconfontyyy';
+    src: url('font/iconfont.eot');
+    src: url('font/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('font/iconfont.woff') format('woff'),
+    url('font/iconfont.ttf') format('truetype'),
+    url('font/iconfont.svg#iconfontyyy') format('svg');
+    }
 
+    .iconfontyyy {
+
+        font-family: "iconfontyyy" !important;
+        font-size: 25px;
+        font-style: normal;
+        -webkit-font-smoothing: antialiased;
+        -webkit-text-stroke-width: 0.2px;
+        -moz-osx-font-smoothing: grayscale;
+        border-top-right-radius: 4px;
+    }
+
+    #search-control {
+        float: right;
+        position: relative;
+        right: 30px;
+        top: 7px;
+    }
+    .search {
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+        height: 30px;
+        width: 80px;
+        display: inline-block;
+        line-height: 34px;
+        text-align: center;
+        border: 1px solid gray;
+        position: relative;
+        top: -10px;
+    }
+    .searchText{
+        height: 20px;
+        width: 100px;
+    }
+    .search:hover {
+        background-color: #AAA;
+    }
+   
+    #search-button {
+        cursor: pointer;
+        background-color: #DDD;
+        height: 30px;
+        width: 60px;
+        display: inline-block;
+        line-height: 34px;
+        text-align: center;
+        position: relative;
+        left: -9px;
+        top: -6px;
+        border: 1px solid gray;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+    }
+    #rearchSelect {
+        display: none;
+        position: absolute;
+        width: 82px;
+        height: auto;
+        z-index: 999;
+    }
+    #rearchSelect ul {
+        margin-top: 5px;
+        padding: 0;
+        border-radius: 2px;
+        border: 1px #777 solid; 
+        overflow: hidden;
+    }
+    #rearchSelect li {
+        font-size: 12px;
+        display: block;
+        cursor: pointer;
+        background-color: #fff;
+        height: 25px;
+        width: 82px;
+        text-align: center;
+    }
+    #rearchSelect li:hover {
+        background-color: #AAA;
+        color:#fff;
+    }
+    .li-click {
+       background-color:rgba(51,153,255,.9) !important;
+       color:#FFF;
+    }
 
 /*表格里面的内容*/
 .thead{
@@ -255,7 +345,7 @@ img{
     cursor: pointer;
     border-radius: 4px;
     position: absolute;
-    left: 970px;
+    left: 980px;
    
 }
 
@@ -274,7 +364,7 @@ img{
     border: 1px solid gray;
     position: absolute;
     top: 162px;
-    left: 1035px;
+    left: 1045px;
     text-indent: 10px;
 }
 .formPic {
@@ -314,7 +404,8 @@ ul.dropdown-menu li {
     border: 1px solid #778181;
     background-color: white;
     position: relative;
-    left: 180px;
+    left: 191px;
+    top: 5px;
 
 }
 
@@ -506,14 +597,14 @@ form{
     float: left;
 }
 
-form span{
+/*form span{
     color: #f00;
     font-size: 12px;
     border: none;
     position: relative;
     left:7px;
     display: none;
-    }
+    }*/
 
 input.divBottom {
     border-radius: 4px;
@@ -586,7 +677,7 @@ input.divBottom:hover{
     width: 1306px;
     height: 100px;
     margin: 0px  0px 0px 20px ;
-  
+    display: none;
 }
 
 ul.pagination {
@@ -616,9 +707,14 @@ ul.pagination li a:hover{
 }
 
 /*加载*/
-#loading  
-{  
+#loading  {  
     position:fixed;  
     top:40%;  
-    left:630px;   
+    left:630px; 
 }  
+#errorLoading{
+    position:fixed;  
+    top:40%;  
+    left:595px;
+    display: none; 
+}

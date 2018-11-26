@@ -1,27 +1,13 @@
-<html>
-<head>
-	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){
-  $("input").keydown(function(){
-    $("input").css("background-color","#FFFFCC");
-  });
-  $("input").keyup(function(){
-    $("input").css("background-color","#D6D6FF");
-  });
-  $("#btn1").click(function(){
-    $("input").keydown();
-  });  
-  $("#btn2").click(function(){
-    $("input").keyup();
-  });  
-});
-</script>
-</head>
-<body>
-Enter your name: <input type="text" />
-<p>当发生 keydown 和 keyup 事件时，输入域会改变颜色。请试着在其中输入内容。</p>
-<p><button id="btn1">触发输入域的 keydown 事件</button></p>
-<p><button id="btn2">触发输入域的 keyup 事件</button></p>
-</body>
-</html>
+var typeid = $("#typeid_fast option:selected").val();
+var subject = $("[name ='subject']").val();
+var message = $("[name ='message']").val();
+var htmlStr ="<tr id = 'trname'><td><div class='post_avatar'>< img src='img/touxiang.gif'></div><div class='post_infolist'><div class='post_infolist_tit'><em>[< a href=' ' id ='typeid'>"+typeid+"</ a>]</em>< a href='#' class='s'>"+subject+"</ a></div><div class='threadlist_imglist'><span>< a href='#'>"+message+"</ a></span></div><div class='post_infolist_other'><div class='z'><span class='author'>< a href='# c='1' mid='card_648'>swanglei</ a></span><span class='dateline'>2018-3-27</span></div><div class='z nums' style='padding-left: 25px;'><span class='views'>60610</span><span class='reply'>146</span></div><span class='time y'>< a href='#' c='1' >ixianbai</ a>           <span>@</span><span>2018-12-4 15:35</span></span></div></div></td><td>";
+var obj = $(htmlStr);
+var typeid = $("#typeid_fast option:selected").val();
+var subject = $("[name ='subject']").val();
+var message = $("[name ='message']").val();
+var htmlStr ="<tr id = 'trname'><td><div class='post_avatar'>< img src='img/touxiang.gif'></div><div class='post_infolist'><div class='post_infolist_tit'><em>[< a href='#' id ='typeid'>"+typeid+"</ a>]</em>< a href='#' class='s'>"+subject+"</ a></div><div class='threadlist_imglist'><span>< a href='#'>"+message+"</ a></span></div><div class='post_infolist_other'><div class='z'><span class='author'>< a href='# c='1' mid='card_648'>swanglei</ a></span><span class='dateline'>2018-3-27</span></div><div class='z nums' style='padding-left: 25px;'><span class='views'>60610</span><span class='reply'>146</span></div><span class='time y'>< a href='#' c='1' >ixianbai</ a>           <span>@</span><span>2018-12-4 15:35</span></span></div></div></td><td>"var typeid = $("#typeid_fast option:selected").val();
+var subject = $("[name ='subject']").val();
+var message = $("[name ='message']").val();
+var htmlStr ="<tr id = 'trname'><td><div class='post_avatar'>< img src='img;
+var obj = $(htmlStr);
